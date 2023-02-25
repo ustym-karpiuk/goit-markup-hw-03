@@ -12,6 +12,8 @@
 	--white-color: #ffffff;
 }
 
+/* Утилиты */
+
 body {
 	color: var(--text-color);
 	background-color: var(--white-color);
@@ -52,14 +54,29 @@ p {
 	margin-right: auto;
 	padding: 0px 12px;
 	width: 1152px;
-	/* outline: 2px solid tomato; */
 }
 
 img {
 	display: block;
 }
 
+/* Hidden */
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 /* Header */
+
 .nav {
 	background: var(--white-color);
 	border-bottom: 1px solid var(--accent-color);
@@ -225,21 +242,6 @@ img {
 	border: 1px solid transparent;
 }
 
-/* Hidden */
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-}
-
 /* Our strengths */
 .strenghths.list {
 	display: flex;
@@ -270,7 +272,9 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 }
+
 /*Examples*/
+
 .photos.list {
 	display: flex;
 }
@@ -287,27 +291,8 @@ img {
 	margin-bottom: 72px;
 }
 
-/* Sections */
-
-.section-title {
-	color: var(--dark-color);
-	font-size: 36px;
-	line-height: 1.11;
-	text-align: center;
-	text-transform: capitalize;
-	letter-spacing: 0.02em;
-}
-
-.section.portfolio {
-	padding-top: 96px;
-}
-
-/* Filters */
-.filter.list {
-	margin-bottom: 72px;
-}
-
 /* Team */
+
 .personnel.list {
 	display: flex;
 }
@@ -345,7 +330,66 @@ img {
 	margin-bottom: 8px;
 }
 
+/* Sections */
+
+.section-title {
+	color: var(--dark-color);
+	font-size: 36px;
+	line-height: 1.11;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 0.02em;
+}
+
+.section.portfolio {
+	padding-top: 96px;
+}
+
+/* Filters */
+
+.filter.list {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	margin-bottom: 72px;
+}
+
+/* Portfolio photos list */
+
+.portfolio-photos.list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.portfolio-photo {
+	width: 360px;
+	background: var(--white-color);
+	margin-right: 24px;
+	margin-bottom: 48px;
+}
+
+.portfolio-photo:nth-child(3n) {
+	margin-right: 0px;
+}
+
+.portfolio-photo:nth-last-child(-n + 3) {
+	margin-bottom: 0px;
+}
+
+.card-name {
+	border: 1px solid var(--accent-color);
+	border-width: 0px 1px 1px;
+
+	padding-left: 16px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.portfolio-img {
+}
+
 /* Footer */
+
 .footer {
 	background: var(--dark-color);
 }
