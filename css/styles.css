@@ -52,8 +52,8 @@ p {
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0px 12px;
-	width: 1152px;
+	padding: 0px 15px;
+	width: 1158px;
 }
 
 img {
@@ -78,14 +78,13 @@ img {
 /* Header */
 
 .nav {
-	background: var(--white-color);
 	border-bottom: 1px solid var(--accent-color);
 }
 
 .main-nav {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 .logo-primary {
@@ -144,6 +143,10 @@ img {
 
 .page-nav-link.current {
 	color: var(--brand-color);
+}
+
+.address-nav {
+	margin-left: auto;
 }
 
 .address.list {
